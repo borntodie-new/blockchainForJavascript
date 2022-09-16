@@ -128,6 +128,21 @@ yarn add dotenv
 require("dotenv").config() # 将dotenv加载到js的process对象中
 process.env.PRIVATE_KEY
 ```
+5. prettier prettier-plugin-solidity：美化solidity代码
+```shell
+# 安装
+yarn add prettier prettier-plugin-solidity
+# 使用
+1. 在项目根目录下新建`.prettierrc`文件
+2. 在文件中配置所有优化项
+{
+    "tabWidth": 4 # 表示solidity文件代码中的tab表示4个空格
+    "semi": false, # 表示
+    "useTabs": false,
+    "singleQuote": false
+}
+```
+
 ## 信息加密处理
 在本示例代码中，我们的私钥等不可泄露信息是硬编码在`.env`文
 中。使用测试网和ganache本地区块节点时，私钥泄露没有任何问题，但是在正式上线部署到主网上，这是非常致命的，那么我们该如何处理呢？
