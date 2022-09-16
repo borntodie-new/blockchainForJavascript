@@ -234,4 +234,3 @@ async function main() {
     - 可以使用infura【https://infura.io】：推荐，这个提供了所有以太坊的测试链。
 - 提供网络节点上的钱包信息
     - 直接从metamask上找到测试网的钱包的私钥
-
