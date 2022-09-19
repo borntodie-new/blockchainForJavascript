@@ -19,7 +19,10 @@ contract FundMe {
     AggregatorV3Interface private s_priceFeed;
 
     // Events (we have none!)
-
+	
+	fallback() external payable {}
+	
+	receive() external payable{}
     // Modifiers
     modifier onlyOwner() {
         if (msg.sender != i_owner) revert FundMe__NotOwner();
