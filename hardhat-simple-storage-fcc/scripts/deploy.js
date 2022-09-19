@@ -38,11 +38,16 @@ async function main() {
 async function verify(contractAddress, args) {
     console.log("Verifying contract...")
     try {
+        console.log("来了")
+        console.log(contractAddress)
+        console.log(args)
         await run("verify:verify", {
             address: contractAddress,
-            constructorArgsParams: args,
+            constructorArguments: args,
         })
+        console.log("又走了")
     } catch (e) {
+        console.log("出错了")
         if (e.message.toLowerCase().includes("already verify")) {
             console.log("Already Verify!")
         } else {
