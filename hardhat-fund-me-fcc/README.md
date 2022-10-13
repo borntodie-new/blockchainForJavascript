@@ -5,7 +5,7 @@
 > hardhat-deploy插件主要是使开发人员更快的部署开发项目
 1. 安装
     ```shell
-    yarn add --dev hardhat
+    yarn add --dev hardhat-deploy
     ```
 2. 使用
     - 在项目根目录下新建`deploy`文件夹，在里面新建一个js脚本。注意：新建的js脚本的名字最好有顺序，建议以00、01、02...开头，当我们在执行deploy命令时，项目会按照00、01、02的顺序依次执行脚本
